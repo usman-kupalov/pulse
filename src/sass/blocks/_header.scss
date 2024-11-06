@@ -1,0 +1,37 @@
+@use '../base/variables' as vars;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_logo {
+        width: 250px;
+        img {
+            width: 100%;
+        }
+    }
+    &_official {
+        color: vars.$text_color;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        span {
+            display: block;
+            font-size: 18px;
+        }
+    }
+    &_phone {
+        display: block;
+        color: vars.$text_color;
+        font-size: 18px;
+        font-weight: 700;
+        &:hover {
+            color: vars.$text_color;
+            text-decoration: none
+        }
+    }
+    &_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
